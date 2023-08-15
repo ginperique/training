@@ -43,6 +43,11 @@ body {
   /*font-family: 'Courier New', Courier, monospace;*/
 }
 
+.header-left a {
+  color:inherit;  /* 文字色を変えない */
+  text-decoration: none;  /* 下線の非表示 */
+}
+
 .header-right {
   color: white;
   /*font-family: 'Courier New', Courier, monospace;*/
@@ -61,6 +66,7 @@ body {
   margin: 0px 0;
 }
 
+/* Top **************************************/
 .top-wrapper {
   padding: 180px 0 100px 0;
   height: 300px;
@@ -111,9 +117,17 @@ body {
   font-weight: bold;
 }
 
+.grid {
+  display: grid;
+  gap: 26px;
+  grid-template: repeat(auto-fit, minmax(240px, 1fr));;
+  margin-top: 6%;
+  margin-bottom: 50px; 
+}
 .training {
   float: left;
-  width: 33%;
+  /*width: 33%;*/
+  font-size: 1rem;
 }
 
 .training-icon {
@@ -220,6 +234,21 @@ body {
 
 /* モバイル版 **************/
 @media (max-width: 600px) {
-  .page-title {
-    font-size: 2.5rem;
+  /* Top ***************************************/
+  .top-wrapper {
+    padding: 90px 0 100px 0;
+    height: 100px;
+    background-image: url(../image/frank.jpg);
+    background-size: cover;
+    text-align: center;
+    position: relative;
   }
+
+  .top-wrapper h1{
+    font-size: 3rem;
+  }
+  
+  .top-wrapper h2{
+    font-size: 1rem;
+  }
+}
