@@ -234,7 +234,17 @@ body {
 
 /* モバイル版 **************/
 @media (max-width: 600px) {
-  /* Top ***************************************/
+  /* HEADER ************************************/
+  
+  .header-left h1{
+   font-size: 1rem;
+  }
+
+  .header-right h2 {
+   font-size: 0.8rem;
+  }
+
+  /* TOP ***************************************/
   .top-wrapper {
     padding: 90px 0 100px 0;
     height: 100px;
