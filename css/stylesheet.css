@@ -13,6 +13,25 @@ body {
   margin: 0;
 }
 
+.wrapper {
+  max-width: 1100px;  /* 最大幅1100pxの指定 */
+  padding: 0 4%;  /* スマートフォン向け余白の設定 */
+  margin: 0 auto; /* 中央に配置する指定 */
+}
+
+.main {
+  position: relative;
+  top: 85px;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  padding: 0px 0px;
+  margin: 0px 0;
+}
+
+a {
+  text-decoration: none;  /* 下線部の削除 */
+}
+
 /* HEADER *************************************************/
 .header {
   background-color: rgba(32, 27, 26, 0.967);
@@ -24,11 +43,7 @@ body {
   z-index: 10;
 }
 
-.wrapper {
-  max-width: 1100px;  /* 最大幅1100pxの指定 */
-  padding: 0 4%;  /* スマートフォン向け余白の設定 */
-  margin: 0 auto; /* 中央に配置する指定 */
-}
+
 .header .wrapper{
   display: flex;
   justify-content: space-between;
@@ -53,19 +68,25 @@ body {
   /*font-family: 'Courier New', Courier, monospace;*/
 }
 
-.header-right h2 {
-  font-size: 1.5rem;
+/* menu *********************/
+.main-nav {
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
 }
 
-.main {
-  position: relative;
-  top: 85px;
-  background-color: rgb(0, 0, 0);
-  width: 100%;
-  padding: 0px 0px;
-  margin: 0px 0;
+.main-nav li {
+  margin-left: 36px;
 }
 
+.main-nav a {
+  color: white;
+}
+.main-nav a:hover {
+  color: rgb(0, 59, 221);
+}
 /* Top **************************************/
 .top-wrapper {
   padding: 180px 0 100px 0;
@@ -100,7 +121,6 @@ body {
 
 .menu-big6-wrapper {
   height: 1000px;
-  /*padding: 0px 0px 0px 0px;*/
   background-color: #f7f7f7;
   text-align: center;
 }
@@ -245,6 +265,9 @@ body {
   }
 
   /* TOP ***************************************/
+  .header {
+    height: 60px;
+  }
   .top-wrapper {
     padding: 90px 0 100px 0;
     height: 100px;
