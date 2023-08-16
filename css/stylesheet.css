@@ -255,6 +255,11 @@ a {
 /* モバイル版 **************/
 @media (max-width: 600px) {
   /* HEADER ************************************/
+  .header .wrapper{
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    justify-content: space-between;
+  }
   
   .header-left h1{
    font-size: 1rem;
