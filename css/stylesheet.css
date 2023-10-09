@@ -125,6 +125,12 @@ a {
   text-align: center;
 }
 
+.menu-joint-wrapper {
+  height: 2000px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
 .heading {
   padding-top: 60px;
   padding-bottom: 30px;
@@ -260,7 +266,7 @@ a {
     flex-direction: column; /* 縦に並べる */
     justify-content: space-between;
   }
-  
+
   .header-left h1{
    font-size: 1rem;
   }
@@ -288,5 +294,17 @@ a {
   
   .top-wrapper h2{
     font-size: 1rem;
+  }
+
+  .menu-big6-wrapper {
+    height: 2000px;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  
+  .menu-joint-wrapper {
+    height: 3000px;
+    background-color: #f7f7f7;
+    text-align: center;
   }
 }
